@@ -1,0 +1,1150 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.vit.ac.in"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.vit.ac.in">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Adult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Faculty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Male"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Schools"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Childof"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#FacultyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Friendof"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HandeledBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#RegisterFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#School"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fatherof"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#siblingof"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Placed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#attendance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cgpa"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#coursename"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#facid"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#facname"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#facphone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#grade"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#havetopay"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#marks"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#phone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#reg"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#vibrance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#C"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#D"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#E"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rushmitha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#daisy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jyoshna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#keerthi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mech"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#raksha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#scse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sense"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sneha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sss"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#swe1010"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#swe2005"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#swe2007"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#swe2016"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#swe3001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vvv"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#xxx"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#yyy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#zzz"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Faculty"/>
+        <Class IRI="#Adult"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Faculty"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Male"/>
+        <Class IRI="#Parent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parent"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Parent"/>
+        <NamedIndividual IRI="#A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parent"/>
+        <NamedIndividual IRI="#B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parent"/>
+        <NamedIndividual IRI="#C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parent"/>
+        <NamedIndividual IRI="#D"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parent"/>
+        <NamedIndividual IRI="#E"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Rushmitha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#daisy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#jyoshna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#keerthi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Schools"/>
+        <NamedIndividual IRI="#mech"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#raksha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Schools"/>
+        <NamedIndividual IRI="#scse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Schools"/>
+        <NamedIndividual IRI="#sense"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#sneha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Faculty"/>
+        <NamedIndividual IRI="#sss"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#swe1010"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#swe2005"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#swe2007"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#swe2016"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#swe3001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Faculty"/>
+        <NamedIndividual IRI="#vvv"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Faculty"/>
+        <NamedIndividual IRI="#xxx"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Faculty"/>
+        <NamedIndividual IRI="#yyy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Faculty"/>
+        <NamedIndividual IRI="#zzz"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Childof"/>
+        <NamedIndividual IRI="#Rushmitha"/>
+        <NamedIndividual IRI="#D"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Friendof"/>
+        <NamedIndividual IRI="#Rushmitha"/>
+        <NamedIndividual IRI="#keerthi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Friendof"/>
+        <NamedIndividual IRI="#Rushmitha"/>
+        <NamedIndividual IRI="#sneha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RegisterFor"/>
+        <NamedIndividual IRI="#Rushmitha"/>
+        <NamedIndividual IRI="#swe3001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RegisterFor"/>
+        <NamedIndividual IRI="#Rushmitha"/>
+        <NamedIndividual IRI="#swe2007"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#School"/>
+        <NamedIndividual IRI="#Rushmitha"/>
+        <NamedIndividual IRI="#sense"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Childof"/>
+        <NamedIndividual IRI="#daisy"/>
+        <NamedIndividual IRI="#B"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Friendof"/>
+        <NamedIndividual IRI="#daisy"/>
+        <NamedIndividual IRI="#sneha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Friendof"/>
+        <NamedIndividual IRI="#daisy"/>
+        <NamedIndividual IRI="#jyoshna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RegisterFor"/>
+        <NamedIndividual IRI="#daisy"/>
+        <NamedIndividual IRI="#swe2005"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RegisterFor"/>
+        <NamedIndividual IRI="#daisy"/>
+        <NamedIndividual IRI="#swe1010"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#School"/>
+        <NamedIndividual IRI="#daisy"/>
+        <NamedIndividual IRI="#scse"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Childof"/>
+        <NamedIndividual IRI="#jyoshna"/>
+        <NamedIndividual IRI="#C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Friendof"/>
+        <NamedIndividual IRI="#jyoshna"/>
+        <NamedIndividual IRI="#sneha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Friendof"/>
+        <NamedIndividual IRI="#jyoshna"/>
+        <NamedIndividual IRI="#daisy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RegisterFor"/>
+        <NamedIndividual IRI="#jyoshna"/>
+        <NamedIndividual IRI="#swe2016"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RegisterFor"/>
+        <NamedIndividual IRI="#jyoshna"/>
+        <NamedIndividual IRI="#swe2007"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#School"/>
+        <NamedIndividual IRI="#jyoshna"/>
+        <NamedIndividual IRI="#scse"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Childof"/>
+        <NamedIndividual IRI="#keerthi"/>
+        <NamedIndividual IRI="#E"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Friendof"/>
+        <NamedIndividual IRI="#keerthi"/>
+        <NamedIndividual IRI="#sneha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Friendof"/>
+        <NamedIndividual IRI="#keerthi"/>
+        <NamedIndividual IRI="#raksha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RegisterFor"/>
+        <NamedIndividual IRI="#keerthi"/>
+        <NamedIndividual IRI="#swe2005"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RegisterFor"/>
+        <NamedIndividual IRI="#keerthi"/>
+        <NamedIndividual IRI="#swe1010"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#School"/>
+        <NamedIndividual IRI="#keerthi"/>
+        <NamedIndividual IRI="#sense"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Childof"/>
+        <NamedIndividual IRI="#raksha"/>
+        <NamedIndividual IRI="#D"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Friendof"/>
+        <NamedIndividual IRI="#raksha"/>
+        <NamedIndividual IRI="#sneha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Friendof"/>
+        <NamedIndividual IRI="#raksha"/>
+        <NamedIndividual IRI="#keerthi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RegisterFor"/>
+        <NamedIndividual IRI="#raksha"/>
+        <NamedIndividual IRI="#swe3001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RegisterFor"/>
+        <NamedIndividual IRI="#raksha"/>
+        <NamedIndividual IRI="#swe2016"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#School"/>
+        <NamedIndividual IRI="#raksha"/>
+        <NamedIndividual IRI="#mech"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Childof"/>
+        <NamedIndividual IRI="#sneha"/>
+        <NamedIndividual IRI="#A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Friendof"/>
+        <NamedIndividual IRI="#sneha"/>
+        <NamedIndividual IRI="#jyoshna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Friendof"/>
+        <NamedIndividual IRI="#sneha"/>
+        <NamedIndividual IRI="#raksha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Friendof"/>
+        <NamedIndividual IRI="#sneha"/>
+        <NamedIndividual IRI="#daisy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Friendof"/>
+        <NamedIndividual IRI="#sneha"/>
+        <NamedIndividual IRI="#keerthi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RegisterFor"/>
+        <NamedIndividual IRI="#sneha"/>
+        <NamedIndividual IRI="#swe3001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#RegisterFor"/>
+        <NamedIndividual IRI="#sneha"/>
+        <NamedIndividual IRI="#swe1010"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#School"/>
+        <NamedIndividual IRI="#sneha"/>
+        <NamedIndividual IRI="#scse"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#School"/>
+        <NamedIndividual IRI="#sss"/>
+        <NamedIndividual IRI="#scse"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HandeledBy"/>
+        <NamedIndividual IRI="#swe1010"/>
+        <NamedIndividual IRI="#sss"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HandeledBy"/>
+        <NamedIndividual IRI="#swe2005"/>
+        <NamedIndividual IRI="#yyy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HandeledBy"/>
+        <NamedIndividual IRI="#swe2007"/>
+        <NamedIndividual IRI="#zzz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HandeledBy"/>
+        <NamedIndividual IRI="#swe2016"/>
+        <NamedIndividual IRI="#xxx"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HandeledBy"/>
+        <NamedIndividual IRI="#swe3001"/>
+        <NamedIndividual IRI="#vvv"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#School"/>
+        <NamedIndividual IRI="#vvv"/>
+        <NamedIndividual IRI="#sense"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#School"/>
+        <NamedIndividual IRI="#xxx"/>
+        <NamedIndividual IRI="#mech"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#School"/>
+        <NamedIndividual IRI="#yyy"/>
+        <NamedIndividual IRI="#sense"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#School"/>
+        <NamedIndividual IRI="#zzz"/>
+        <NamedIndividual IRI="#scse"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#A"/>
+        <Literal datatypeIRI="&xsd;Name">A Rajanagendra</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phone"/>
+        <NamedIndividual IRI="#A"/>
+        <Literal datatypeIRI="&xsd;int">9654196541</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#B"/>
+        <Literal datatypeIRI="&xsd;Name">B Rajendra Prasad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phone"/>
+        <NamedIndividual IRI="#B"/>
+        <Literal datatypeIRI="&xsd;integer">8418418411</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#C"/>
+        <Literal datatypeIRI="&xsd;Name">C Pathapati</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phone"/>
+        <NamedIndividual IRI="#C"/>
+        <Literal datatypeIRI="&xsd;integer">7423742323</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#D"/>
+        <Literal datatypeIRI="&xsd;Name">D Srinivasan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phone"/>
+        <NamedIndividual IRI="#D"/>
+        <Literal datatypeIRI="&xsd;integer">7788778899</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#E"/>
+        <Literal datatypeIRI="&xsd;Name">E Madhana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phone"/>
+        <NamedIndividual IRI="#E"/>
+        <Literal datatypeIRI="&xsd;integer">7744774444</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#attendance"/>
+        <NamedIndividual IRI="#Rushmitha"/>
+        <Literal datatypeIRI="&xsd;int">71</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cgpa"/>
+        <NamedIndividual IRI="#Rushmitha"/>
+        <Literal datatypeIRI="&xsd;float">6.55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grade"/>
+        <NamedIndividual IRI="#Rushmitha"/>
+        <Literal datatypeIRI="&xsd;Name">C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasage"/>
+        <NamedIndividual IRI="#Rushmitha"/>
+        <Literal datatypeIRI="&xsd;int">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#havetopay"/>
+        <NamedIndividual IRI="#Rushmitha"/>
+        <Literal datatypeIRI="&xsd;int">400000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#marks"/>
+        <NamedIndividual IRI="#Rushmitha"/>
+        <Literal datatypeIRI="&xsd;int">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Rushmitha"/>
+        <Literal datatypeIRI="&xsd;Name">Rushmitha Srinivasan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phone"/>
+        <NamedIndividual IRI="#Rushmitha"/>
+        <Literal datatypeIRI="&xsd;int">7777788888</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#reg"/>
+        <NamedIndividual IRI="#Rushmitha"/>
+        <Literal datatypeIRI="&xsd;Name">18MIS1034</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Placed"/>
+        <NamedIndividual IRI="#daisy"/>
+        <Literal datatypeIRI="&xsd;Name">Yes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#attendance"/>
+        <NamedIndividual IRI="#daisy"/>
+        <Literal datatypeIRI="&xsd;int">96</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cgpa"/>
+        <NamedIndividual IRI="#daisy"/>
+        <Literal datatypeIRI="&xsd;float">9.63</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grade"/>
+        <NamedIndividual IRI="#daisy"/>
+        <Literal datatypeIRI="&xsd;Name">S</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasage"/>
+        <NamedIndividual IRI="#daisy"/>
+        <Literal datatypeIRI="&xsd;int">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#havetopay"/>
+        <NamedIndividual IRI="#daisy"/>
+        <Literal datatypeIRI="&xsd;float">100000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#marks"/>
+        <NamedIndividual IRI="#daisy"/>
+        <Literal datatypeIRI="&xsd;float">48.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#daisy"/>
+        <Literal datatypeIRI="&xsd;Name">Daisy Li</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phone"/>
+        <NamedIndividual IRI="#daisy"/>
+        <Literal datatypeIRI="&xsd;int">7979797979</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#reg"/>
+        <NamedIndividual IRI="#daisy"/>
+        <Literal datatypeIRI="&xsd;Name">17MIS1129</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vibrance"/>
+        <NamedIndividual IRI="#daisy"/>
+        <Literal datatypeIRI="&xsd;Name">yes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#attendance"/>
+        <NamedIndividual IRI="#jyoshna"/>
+        <Literal datatypeIRI="&xsd;int">66</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cgpa"/>
+        <NamedIndividual IRI="#jyoshna"/>
+        <Literal datatypeIRI="&xsd;float">8.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grade"/>
+        <NamedIndividual IRI="#jyoshna"/>
+        <Literal datatypeIRI="&xsd;Name">A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasage"/>
+        <NamedIndividual IRI="#jyoshna"/>
+        <Literal datatypeIRI="&xsd;int">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#havetopay"/>
+        <NamedIndividual IRI="#jyoshna"/>
+        <Literal datatypeIRI="&xsd;int">230000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#marks"/>
+        <NamedIndividual IRI="#jyoshna"/>
+        <Literal datatypeIRI="&xsd;float">41.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#jyoshna"/>
+        <Literal datatypeIRI="&xsd;Name">Pathapati Jyoshna</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phone"/>
+        <NamedIndividual IRI="#jyoshna"/>
+        <Literal datatypeIRI="&xsd;int">8998899888</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#reg"/>
+        <NamedIndividual IRI="#jyoshna"/>
+        <Literal datatypeIRI="&xsd;Name">17MIS1153</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vibrance"/>
+        <NamedIndividual IRI="#jyoshna"/>
+        <Literal datatypeIRI="&xsd;Name">yes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Placed"/>
+        <NamedIndividual IRI="#keerthi"/>
+        <Literal datatypeIRI="&xsd;Name">Yes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#attendance"/>
+        <NamedIndividual IRI="#keerthi"/>
+        <Literal datatypeIRI="&xsd;int">88</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cgpa"/>
+        <NamedIndividual IRI="#keerthi"/>
+        <Literal datatypeIRI="&xsd;float">9.33</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grade"/>
+        <NamedIndividual IRI="#keerthi"/>
+        <Literal datatypeIRI="&xsd;Name">S</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasage"/>
+        <NamedIndividual IRI="#keerthi"/>
+        <Literal datatypeIRI="&xsd;int">19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#havetopay"/>
+        <NamedIndividual IRI="#keerthi"/>
+        <Literal datatypeIRI="&xsd;float">100000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#marks"/>
+        <NamedIndividual IRI="#keerthi"/>
+        <Literal datatypeIRI="&xsd;float">42.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#keerthi"/>
+        <Literal datatypeIRI="&xsd;Name">M keerthi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phone"/>
+        <NamedIndividual IRI="#keerthi"/>
+        <Literal datatypeIRI="&xsd;int">7474741414</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#reg"/>
+        <NamedIndividual IRI="#keerthi"/>
+        <Literal datatypeIRI="&xsd;Name">18MIS1019</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vibrance"/>
+        <NamedIndividual IRI="#keerthi"/>
+        <Literal datatypeIRI="&xsd;Name">yes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Placed"/>
+        <NamedIndividual IRI="#raksha"/>
+        <Literal datatypeIRI="&xsd;Name">Yes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#attendance"/>
+        <NamedIndividual IRI="#raksha"/>
+        <Literal datatypeIRI="&xsd;int">88</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cgpa"/>
+        <NamedIndividual IRI="#raksha"/>
+        <Literal datatypeIRI="&xsd;float">8.23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grade"/>
+        <NamedIndividual IRI="#raksha"/>
+        <Literal datatypeIRI="&xsd;Name">A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasage"/>
+        <NamedIndividual IRI="#raksha"/>
+        <Literal datatypeIRI="&xsd;int">19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#havetopay"/>
+        <NamedIndividual IRI="#raksha"/>
+        <Literal datatypeIRI="&xsd;int">290000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#marks"/>
+        <NamedIndividual IRI="#raksha"/>
+        <Literal datatypeIRI="&xsd;int">38</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#raksha"/>
+        <Literal datatypeIRI="&xsd;Name">Raksha Srinivasan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phone"/>
+        <NamedIndividual IRI="#raksha"/>
+        <Literal datatypeIRI="&xsd;int">8585858584</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#reg"/>
+        <NamedIndividual IRI="#raksha"/>
+        <Literal datatypeIRI="&xsd;Name">18MIS1090</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Placed"/>
+        <NamedIndividual IRI="#sneha"/>
+        <Literal datatypeIRI="&xsd;Name">Yes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#attendance"/>
+        <NamedIndividual IRI="#sneha"/>
+        <Literal datatypeIRI="&xsd;int">99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cgpa"/>
+        <NamedIndividual IRI="#sneha"/>
+        <Literal datatypeIRI="&xsd;float">9.88</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#grade"/>
+        <NamedIndividual IRI="#sneha"/>
+        <Literal datatypeIRI="&xsd;Name">S</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasage"/>
+        <NamedIndividual IRI="#sneha"/>
+        <Literal datatypeIRI="&xsd;int">19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#havetopay"/>
+        <NamedIndividual IRI="#sneha"/>
+        <Literal datatypeIRI="&xsd;int">96000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#marks"/>
+        <NamedIndividual IRI="#sneha"/>
+        <Literal datatypeIRI="&xsd;float">49.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#sneha"/>
+        <Literal datatypeIRI="&xsd;string">R N Sneha Priya</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phone"/>
+        <NamedIndividual IRI="#sneha"/>
+        <Literal datatypeIRI="&xsd;int">7036665525</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#reg"/>
+        <NamedIndividual IRI="#sneha"/>
+        <Literal datatypeIRI="&xsd;Name">18MIS1002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vibrance"/>
+        <NamedIndividual IRI="#sneha"/>
+        <Literal datatypeIRI="&xsd;Name">yes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#facid"/>
+        <NamedIndividual IRI="#sss"/>
+        <Literal datatypeIRI="&xsd;int">12345</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#facname"/>
+        <NamedIndividual IRI="#sss"/>
+        <Literal datatypeIRI="&xsd;Name">sssssssssssssss</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#facphone"/>
+        <NamedIndividual IRI="#sss"/>
+        <Literal datatypeIRI="&xsd;int">7777777777</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coursename"/>
+        <NamedIndividual IRI="#swe1010"/>
+        <Literal datatypeIRI="&xsd;Name">Digital Image Processing SWE1011</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coursename"/>
+        <NamedIndividual IRI="#swe2005"/>
+        <Literal datatypeIRI="&xsd;Name">Software Testing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coursename"/>
+        <NamedIndividual IRI="#swe2007"/>
+        <Literal datatypeIRI="&xsd;Name">Software Construction</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coursename"/>
+        <NamedIndividual IRI="#swe2016"/>
+        <Literal datatypeIRI="&xsd;Name">Semantic Web Technology</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#coursename"/>
+        <NamedIndividual IRI="#swe3001"/>
+        <Literal datatypeIRI="&xsd;Name">Operating System</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#facid"/>
+        <NamedIndividual IRI="#vvv"/>
+        <Literal datatypeIRI="&xsd;int">12344</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#facname"/>
+        <NamedIndividual IRI="#vvv"/>
+        <Literal datatypeIRI="&xsd;Name">vvvvvvvvvvvvvvvvv</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#facphone"/>
+        <NamedIndividual IRI="#vvv"/>
+        <Literal datatypeIRI="&xsd;int">9898989898</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#facid"/>
+        <NamedIndividual IRI="#xxx"/>
+        <Literal datatypeIRI="&xsd;int">12365</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#facname"/>
+        <NamedIndividual IRI="#xxx"/>
+        <Literal datatypeIRI="&xsd;Name">xxxxxxxxxxxxx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#facphone"/>
+        <NamedIndividual IRI="#xxx"/>
+        <Literal datatypeIRI="&xsd;int">8484848484</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#facid"/>
+        <NamedIndividual IRI="#yyy"/>
+        <Literal datatypeIRI="&xsd;int">15555</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#facname"/>
+        <NamedIndividual IRI="#yyy"/>
+        <Literal datatypeIRI="&xsd;Name">yyyyyyyyyyyy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#facphone"/>
+        <NamedIndividual IRI="#yyy"/>
+        <Literal datatypeIRI="&xsd;int">7474741414</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#facid"/>
+        <NamedIndividual IRI="#zzz"/>
+        <Literal datatypeIRI="&xsd;int">41414</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#facname"/>
+        <NamedIndividual IRI="#zzz"/>
+        <Literal datatypeIRI="&xsd;Name">zzzzzzzzzzzzzzz</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#facphone"/>
+        <NamedIndividual IRI="#zzz"/>
+        <Literal datatypeIRI="&xsd;int">8585854141</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Childof"/>
+        <Class IRI="#Male"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#FacultyOf"/>
+        <Class IRI="#Faculty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Friendof"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HandeledBy"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#RegisterFor"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#fatherof"/>
+        <Class IRI="#Parent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#siblingof"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Childof"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#FacultyOf"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Friendof"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HandeledBy"/>
+        <Class IRI="#Faculty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#RegisterFor"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fatherof"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#siblingof"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Male"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#Childof"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#fatherof"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Person"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#Childof"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#Childof"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#siblingof"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Person"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasage"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Variable IRI="urn:swrl#age"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="urn:swrl#age"/>
+                <Literal datatypeIRI="&xsd;integer">17</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Adult"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#Friendof"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#Friendof"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
