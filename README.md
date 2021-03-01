@@ -1,4 +1,4 @@
-# OWL-Ontology-for-Student-Login
+# Ontology-for-Student-Login
 
 This ontalogy is developed by "***R N SNEHA PRIYA***".
 
